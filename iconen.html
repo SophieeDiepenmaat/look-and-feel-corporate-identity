@@ -69,10 +69,10 @@
             <section class="iconen-main">
                 <fieldset>
                     <legend>Categorie</legend>
-                    <button class="categorie-alles">Alles</button>
+                    <button class="categorie-alles" type="button">Alles</button>
 
                     <div>
-                        <input type="checkbox" id="wonen-en-omgeving" name="categorie"/>
+                        <input type="checkbox" id="wonen-en-omgeving" name="categorie" value="wonen-en-omgeving" />
                         <label for="wonen-en-omgeving">Wonen en omgeving</label>
                     </div>
 
@@ -94,6 +94,30 @@
                     <div>
                         <input type="checkbox" id="gemeente-en-contact" name="categorie" value="gemeente-en-contact"/>
                         <label for="gemeente-en-contact">Gemeente en contact</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Variant</legend>
+                    
+                    <div>
+                        <input type="radio" id="regular" name="variant" value="regular" checked/>
+                        <label for="regular">Regular</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="line" name="variant" value="line" />
+                        <label for="line">Line</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="fill" name="variant" value="fill"/>
+                        <label for="fill">Fill</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="diapositive" name="variant" value="diapositive"/>
+                        <label for="diapositive">Diapositive</label>
                     </div>
                 </fieldset>
 
