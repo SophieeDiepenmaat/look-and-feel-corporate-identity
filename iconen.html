@@ -67,29 +67,41 @@
             </section>
             
             <section class="iconen-main">
-                <div class="filters">
-                    <div id="categorie-filters">
-                        <h2>Categorie</h2>
-                        <button class="alles" onclick="filterSelection ('Alles')">Alles</button>
-                        <button class="wonen-en-omgeving" onclick="filterSelection ('Wonen en omgeving')">Wonen en omgeving</button>
-                        <button class="afval-en-milieu" onclick="filterSelection ('Afval en milieu')">Afval en milieu</button>
-                        <button class="zorg-en-ondersteuning" onclick="filterSelection ('Zorg en ondersteuning')">Zorg en ondersteuning</button>
-                        <button class="werk-en-inkomen" onclick="filterSelection ('Werk en inkomen')">Werk en inkomen</button>
-                        <button class="gemeente-en-contact" onclick="filterSelection ('Gemeente en contact')">Gemeente en contact</button>
+                <fieldset>
+                    <legend>Categorie</legend>
+                    <button class="categorie-alles">Alles</button>
+
+                    <div>
+                        <input type="checkbox" id="wonen-en-omgeving" name="categorie"/>
+                        <label for="wonen-en-omgeving">Wonen en omgeving</label>
                     </div>
-            
-                    <div id="variant-filters">
-                        <h2>Variant</h2>
-                        <button class="line" onclick="filterSelection ('Line')">Line</button>
-                        <button class="fill" onclick="filterSelection ('Fill')">Fill</button>
-                        <button class="regular" onclick="filterSelection ('Regular')">Regular</button>
-                        <button class="diapositive" onclick="filterSelection ('Diapositive')">Diapositive</button>
+
+                    <div>
+                        <input type="checkbox" id="afval-en-milieu" name="categorie" value="afval-en-milieu"/>
+                        <label for="afval-en-milieu">Afval en milieu</label>
                     </div>
-                </div>
-                
+
+                    <div>
+                        <input type="checkbox" id="zorg-en-ondersteuning" name="categorie" value="zorg-en-ondersteuning"/>
+                        <label for="zorg-en-ondersteuning">Zorg en ondersteuning</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="werk-en-inkomen" name="categorie" value="werk-en-inkomen"/>
+                        <label for="werk-en-inkomen">Werk en inkomen</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="gemeente-en-contact" name="categorie" value="gemeente-en-contact"/>
+                        <label for="gemeente-en-contact">Gemeente en contact</label>
+                    </div>
+                </fieldset>
+
+
+                  
                 <div class="resultaten">
-                    <h2> 250 iconen gevonden</h2>
-                    <h2>Sorteren op</h2>
+                    <p> 250 iconen gevonden</p>
+                    <label>Sorteren op</label>
                     <button class="Sorteren-op" onclick="filterSelection ('Meest-relevant')">Meest relevant</button> 
 
                     <div class="iconen-grid">   
