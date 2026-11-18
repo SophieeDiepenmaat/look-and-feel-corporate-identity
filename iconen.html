@@ -120,21 +120,39 @@
                         <label for="diapositive">Diapositive</label>
                     </div>
                 </fieldset>
-
-
-                  
+                 
                 <div class="resultaten">
                     <p> 250 iconen gevonden</p>
-                    <label>Sorteren op</label>
-                    <button class="Sorteren-op" onclick="filterSelection ('Meest-relevant')">Meest relevant</button> 
+                    <label for="sort-select">Sorteren op</label>
+                    
+                    <select name="sort" id="sort-select">
+                        <option value="name-asc">Alfabetisch (A-Z)</option>
+                        <option value="name-desc">Alfabetisch (Z-A)</option>
+                        <option value="newest">Meest recent</option>
+                    </select>
 
                     <div class="iconen-grid">   
-                        <div class="iconen-kaart">
-                            <img src="Iconenset-master/Svg/Fill/Paspoort.svg" alt="Paspoort">
-                            <h2>Paspoort</h2>
-                        </div>
-                    </div> 
-                </div>
+                            <a href="detailpagina-iconen.html" class="iconen-kaart">
+                                <img src="Iconenset-master/Svg/Regular/Paspoort.svg" alt="Paspoort">
+                                <h2>Paspoort</h2>  
+                            </a>
+
+                            <a href="detailpagina-iconen.html" class="iconen-kaart">
+                                <img src="Iconenset-master/Svg/Regular/Verhuizen.svg" alt="Verhuizen">
+                                <h2>Verhuizen</h2>  
+                            </a>
+
+                            <a href="detailpagina-iconen.html" class="iconen-kaart">
+                                <img src="Iconenset-master/Svg/Regular/Aanmelden.svg" alt="Aanmelden">
+                                <h2>Aanmelden</h2>  
+                            </a>
+
+                            <a href="detailpagina-iconen.html" class="iconen-kaart">
+                                <img src="Iconenset-master/Svg/Regular/Afval.svg" alt="Afval">
+                                <h2>Afval</h2>  
+                            </a>
+                    </div>
+                </div> 
             </section>
 
 
