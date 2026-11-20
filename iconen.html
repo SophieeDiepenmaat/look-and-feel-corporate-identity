@@ -36,8 +36,9 @@
             <section class="hero-banner-icons">
                 <h1>Een iconenset, open en rechtenvrij, voor elke gemeentelijke website.</h1>
                 <p> Ontwikkeld door OpenGemeenten en gemeente Veenendaal. Bedoeld voor toptaken, formulieren en navigatie op overheidssites — in vier varianten zodat het altijd past bij jouw ontwerp. </p>
-                <span class=" search-icon material-symbols-outlined"> search </span>
-                <input class="search-input" type="search" placeholder="Zoek een icoon">
+                <span class="search-icon material-symbols-outlined"> search </span>
+                <input type="search" id="search-input" name="search" placeholder="Zoek een icoon">
+                <label for="search-input">Zoek een icoon</label>
                 
                 <div class="voordeel-kaarten">
                     <div class="voordeel-kaart">
@@ -67,70 +68,76 @@
             </section>
             
             <section class="iconen-main">
-                <fieldset>
-                    <legend>Categorie</legend>
-                    <button class="categorie-alles" type="button">Alles</button>
+                <div class="filters">
+                    <fieldset>
+                        <legend>Categorie</legend>
+                        <button class="categorie-alles" type="button">Alles</button>
 
-                    <div>
-                        <input type="checkbox" id="wonen-en-omgeving" name="categorie" value="wonen-en-omgeving" />
-                        <label for="wonen-en-omgeving">Wonen en omgeving</label>
-                    </div>
+                        <div>
+                            <input type="checkbox" id="wonen-en-omgeving" name="categorie" value="wonen-en-omgeving" />
+                            <label for="wonen-en-omgeving">Wonen en omgeving</label>
+                        </div>
 
-                    <div>
-                        <input type="checkbox" id="afval-en-milieu" name="categorie" value="afval-en-milieu"/>
-                        <label for="afval-en-milieu">Afval en milieu</label>
-                    </div>
+                        <div>
+                            <input type="checkbox" id="afval-en-milieu" name="categorie" value="afval-en-milieu"/>
+                            <label for="afval-en-milieu">Afval en milieu</label>
+                        </div>
 
-                    <div>
-                        <input type="checkbox" id="zorg-en-ondersteuning" name="categorie" value="zorg-en-ondersteuning"/>
-                        <label for="zorg-en-ondersteuning">Zorg en ondersteuning</label>
-                    </div>
+                        <div>
+                            <input type="checkbox" id="zorg-en-ondersteuning" name="categorie" value="zorg-en-ondersteuning"/>
+                            <label for="zorg-en-ondersteuning">Zorg en ondersteuning</label>
+                        </div>
 
-                    <div>
-                        <input type="checkbox" id="werk-en-inkomen" name="categorie" value="werk-en-inkomen"/>
-                        <label for="werk-en-inkomen">Werk en inkomen</label>
-                    </div>
+                        <div>
+                            <input type="checkbox" id="werk-en-inkomen" name="categorie" value="werk-en-inkomen"/>
+                            <label for="werk-en-inkomen">Werk en inkomen</label>
+                        </div>
 
-                    <div>
-                        <input type="checkbox" id="gemeente-en-contact" name="categorie" value="gemeente-en-contact"/>
-                        <label for="gemeente-en-contact">Gemeente en contact</label>
-                    </div>
-                </fieldset>
+                        <div>
+                            <input type="checkbox" id="gemeente-en-contact" name="categorie" value="gemeente-en-contact"/>
+                            <label for="gemeente-en-contact">Gemeente en contact</label>
+                        </div>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Variant</legend>
-                    
-                    <div>
-                        <input type="radio" id="regular" name="variant" value="regular" checked/>
-                        <label for="regular">Regular</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" id="line" name="variant" value="line" />
-                        <label for="line">Line</label>
-                    </div>
+                    <fieldset>
+                        <legend>Variant</legend>
+                        
+                        <div>
+                            <input type="radio" id="regular" name="variant" value="regular" checked/>
+                            <label for="regular">Regular</label>
+                        </div>
+                        
+                        <div>
+                            <input type="radio" id="line" name="variant" value="line" />
+                            <label for="line">Line</label>
+                        </div>
 
-                    <div>
-                        <input type="radio" id="fill" name="variant" value="fill"/>
-                        <label for="fill">Fill</label>
-                    </div>
+                        <div>
+                            <input type="radio" id="fill" name="variant" value="fill"/>
+                            <label for="fill">Fill</label>
+                        </div>
 
-                    <div>
-                        <input type="radio" id="diapositive" name="variant" value="diapositive"/>
-                        <label for="diapositive">Diapositive</label>
-                    </div>
-                </fieldset>
+                        <div>
+                            <input type="radio" id="diapositive" name="variant" value="diapositive"/>
+                            <label for="diapositive">Diapositive</label>
+                        </div>
+                    </fieldset>
+                </div>
                  
-                <div class="resultaten">
-                    <p> 250 iconen gevonden</p>
-                    <label for="sort-select">Sorteren op</label>
+                <div class="results">
+                    <div class="results-bar">
+                        <p> 250 iconen gevonden</p>
+                        <div class="sorteren-op">
+                            <label for="sort-select">Sorteren op</label>
                     
-                    <select name="sort" id="sort-select">
-                        <option value="name-asc">Alfabetisch (A-Z)</option>
-                        <option value="name-desc">Alfabetisch (Z-A)</option>
-                        <option value="newest">Meest recent</option>
-                    </select>
-
+                            <select name="sort" id="sort-select">
+                                <option value="name-asc">Alfabetisch (A-Z)</option>
+                                <option value="name-desc">Alfabetisch (Z-A)</option>
+                                <option value="newest">Meest recent</option>
+                            </select>   
+                        </div>
+                    </div>
+                    
                     <div class="iconen-grid">   
                             <a href="detailpagina-iconen.html" class="iconen-kaart">
                                 <img src="Iconenset-master/Svg/Regular/Paspoort.svg" alt="Paspoort">
@@ -152,6 +159,18 @@
                                 <h2>Afval</h2>  
                             </a>
                     </div>
+
+                    <nav class="pagenumbering">
+                        <ul>
+                            <li><button type="button" disabled>Vorige</button></li>
+                            <li><button type="button" class="active">1</button></li>
+                            <li><button type="button">2</button></li>
+                            <li><button type="button">3</button></li>
+                            <li><button type="button">4</button></li>
+                            <li><button type="button">5</button></li>
+                            <li><button type="button">Volgende</button></li>
+                        </ul>
+                    </nav>
                 </div> 
             </section>
 

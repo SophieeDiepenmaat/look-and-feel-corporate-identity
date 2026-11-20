@@ -30,7 +30,7 @@ p {
 /************/
 /* HET MENU */
 /************/
-nav {
+.nav {
   position: fixed;
   inset: 0;
   translate: -100%;
@@ -47,29 +47,29 @@ nav {
 }
 
 /* als menu open is */
-nav.is-open {
+.nav.is-open {
   translate: 0;
 }
 
 /* als menu dicht is */
-nav.is-closed {
+.nav.is-closed {
   translate: -100%;
 }
 
-nav button {
+.nav button {
   @media (width >= 64em) {
     display: none;
   }
 }
 
-nav ul {
+.nav ul {
   @media (width > 64em) {
     display: flex;
     gap: 1em;
   }
 }
 
-nav a {
+.nav a {
   @media (width > 64em) {
     border: none;
     flex-direction: column;  
